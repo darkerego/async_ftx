@@ -17,9 +17,10 @@ class TestApi:
         return await self.api.get_balances()
 
 
-
+key = ''
+secret = ''
 async def main():
-    api = TestApi('9cFo0M3OdYf_ksVUybVae-u6ithk_qFniHPwmX2l', "sbPfaO9VUI4z79nH5zcoDJJqeIRwpz-Mx-2dQPHu")
+    api = TestApi(key,secret)
     ret = await api.test_public()
     print(ret)
     ret = await api.test_private()
